@@ -1,0 +1,1 @@
+# Odoo Technical Training
