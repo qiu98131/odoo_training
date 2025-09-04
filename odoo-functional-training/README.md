@@ -100,3 +100,18 @@ It is designed to help functional consultants and learners understand how Odoo c
 
 ## 🤝 Contribution
 Feel free to fork this repo, suggest improvements, or use it for your own training projects.
+
+---
+
+## 👤 Author
+
+**Zahid Anwar**  
+Senior Odoo Developer | Founder at [Zalino Tech](https://zalinotech.com)  
+
+- 🔹 10+ years of experience in Odoo development & ERP implementation  
+- 🔹 Specialized in functional consultancy, custom module development & API integrations  
+- 🔹 Successfully delivered large-scale ERP projects (Retail, Education, Manufacturing, and Services)  
+
+📧 Email: zahid@zalinotech.com  
+💼 LinkedIn: [linkedin.com/in/ranazahidanwar](https://www.linkedin.com/in/ranazahidanwar)  
+🐙 GitHub: [github.com/zahidodooresources](https://github.com/zahidodooresources)  

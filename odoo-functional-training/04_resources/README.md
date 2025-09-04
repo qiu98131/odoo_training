@@ -10,7 +10,7 @@ The purpose of this directory is to centralize all reference files, making it ea
 - **Diagrams**  
   Business process flows, ER diagrams, and system architecture maps.  
 
-- **Screenshots**  
+- **Images**  
   Step-by-step visuals of Odoo configurations, forms, and reports.  
 
 - **Documents**  
@@ -24,10 +24,13 @@ The purpose of this directory is to centralize all reference files, making it ea
 ## 📌 Usage  
 
 - Use **diagrams** to visualize workflows before implementing them in Odoo.  
-- Refer to **screenshots** when following the training steps in `03-Training_Daywise/`.  
+- Refer to **Images** when following the training steps in `03-Training_Daywise/`.  
 - Download **documents** for additional reading or instructor notes.  
 - Import **templates** into Odoo for quick practice and hands-on sessions.  
 
 ---
 
 ✅ This folder acts as a **knowledge base** to complement the training, ensuring that theoretical requirements are supported with **practical resources**.  
+
+---
+📘 Part of the **Odoo Functional Training Project (Zalino Tech Simulation)**  

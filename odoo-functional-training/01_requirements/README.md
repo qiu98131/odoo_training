@@ -45,3 +45,6 @@ These requirements are later mapped to Odoo modules in the [`02_Modules_Scope/`]
 ---
 
 ✅ These documents serve as the **problem statements** for the training, simulating real-world requirements that will be addressed and automated using Odoo.  
+
+---
+📘 Part of the **Odoo Functional Training Project (Zalino Tech Simulation)**  

@@ -1,0 +1,1 @@
+# Installing Odoo, company profile setup, users & access rights 
