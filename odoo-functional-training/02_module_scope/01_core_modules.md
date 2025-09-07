@@ -43,7 +43,7 @@ These modules ensure smooth coordination between departments and provide the fou
 - Manage multi-branch, multi-currency accounting.  
 - Automate journal entries from sales, purchases, and expenses.  
 - Generate financial statements (Balance Sheet, P&L, Cash Flow).  
-- Handle tax compliance across different regions (Pakistan, UAE, Saudi, etc.).  
+- Handle tax compliance across different regions (Pakistan, US, Saudi, etc.).  
 
 ---
 

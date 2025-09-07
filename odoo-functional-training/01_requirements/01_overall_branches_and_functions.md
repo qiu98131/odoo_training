@@ -4,7 +4,7 @@ This document outlines the different branches of the organization and the key fu
 Following is the list of branches:
 1. Islamabad Branch  
 2. Lahore Branch  
-3. UAE Branch  
+3. US Branch  
 4. China Branch  
 5. Saudi Branch  
 
@@ -54,7 +54,7 @@ Following is the list of branches:
 
 ---
 
-## UAE Branch
+## US Branch
 
 1. **Sale of Hardware**  
    IT hardware retail and B2B sales.
