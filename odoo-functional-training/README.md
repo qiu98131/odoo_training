@@ -98,6 +98,18 @@ It is designed to help functional consultants and learners understand how Odoo c
 
 ---
 
+## 📺 Join This Training on YouTube  
+
+Unlock the full potential of **Odoo 18** with our hands-on training series!  
+In this playlist, you’ll learn step by step through **practical implementations** — from installation to real-world scenarios.  
+
+💡 If you’re ready to build skills and confidence with Odoo, let’s **learn together**!  
+
+▶️ [Watch Odoo Functional Training on YouTube (Full Playlist)](https://www.youtube.com/playlist?list=PLkynUjNia0LYdZI2hir1E7Im7JW2q5aAK)
+
+---
+
+
 ## 🤝 Contribution
 Feel free to fork this repo, suggest improvements, or use it for your own training projects.
 

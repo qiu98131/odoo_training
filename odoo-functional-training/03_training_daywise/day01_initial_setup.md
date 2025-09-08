@@ -19,7 +19,7 @@ This document provides step-by-step instructions to install **Odoo 18** on **Ubu
 
 ```bash
 sudo adduser --system --home=/opt/odoo18 --group odoo18
-sudo usermod -s /bin/bash odoo188
+sudo usermod -s /bin/bash odoo18
 
 ```
 
@@ -149,6 +149,7 @@ sudo chmod 640 /etc/odoo18.conf
 Run the odoo server by command:
 
 ```bash
+sudo -i -u odoo18
 cd /opt/odoo18
 source venv/bin/activate 
 python3 odoo-bin -c /etc/odoo18.conf
@@ -223,6 +224,10 @@ Odoo 18 is now installed and running on your Ubuntu 24.04 system with a dedicate
 - Always use **demo data** in training to simulate real-world scenarios.  
 - Keep consistent naming conventions for users and companies.  
 - This setup will be the **foundation** for all future training sessions.  
+
+## Training Video:
+- [Installation Guide on YouTube](https://www.youtube.com/watch?v=4yqJb93c7_U)
+
 
 ---
 
