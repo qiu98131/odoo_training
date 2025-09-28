@@ -170,6 +170,30 @@ If you face an error:
 - If it is database related issue than fix it by edit postgres config file
 ```
 
+### 9. 创建 Systemd 服务
+创建 Systemd 服务文件以便管理 Odoo 服务：
+
+```bash
+sudo nano /etc/systemd/system/odoo18.service
+```
+
+添加以下内容：
+
+```ini
+[Unit]
+Description=Odoo18
+After=postgresql.service
+
+[Service]
+Type=simple
+User=odoo18
+Group=odoo18
+ExecStart=/opt/odoo18/venv/bin/python3 /opt/odoo18/odoo-bin -c /etc/odoo18.conf
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
 ---
 
 #### ✅ Installation Completed!
