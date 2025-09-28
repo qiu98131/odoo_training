@@ -194,6 +194,20 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target
 ```
+
+### 10. 启动并启用 Odoo 服务
+启动 Odoo 服务并设置为开机自启：
+
+```bash
+sudo systemctl start odoo18
+sudo systemctl enable odoo18
+```
+停止服务和重新加载：
+
+```bash
+sudo systemctl stop odoo18
+sudo systemctl daemon-reload
+```
 ---
 
 #### ✅ Installation Completed!
