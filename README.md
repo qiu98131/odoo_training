@@ -25,7 +25,7 @@ This repository contains **real-world projects, structured exercises, and practi
 
 ---
 
-## 📁 Repository Structure  
+## 📁 Repository Structure  📁
 
 ```text
 odoo-training/
