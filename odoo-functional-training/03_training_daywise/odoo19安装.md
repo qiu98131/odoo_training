@@ -238,6 +238,43 @@ sudo systemctl enable odoo
 | sudo systemctl disable odoo |	取消开机自启	阻止 Odoo 随系统启动。 |
 
 
+### 步骤 8: 安装 Visual Studio Code
+
+安装：
+
+```bash
+sudo snap refresh core20 --channel=stable --revision=2669
+```
+
+命令说明：
+sudo snap refresh core20: 告诉系统更新或安装 core20 这个 snap 包。
+
+--channel=stable: 指定从稳定（stable）频道获取。
+
+--revision=2669: 强制系统下载并切换到编号为 2669 的版本。
+
+### 步骤 9: 配置 VSCode 为 Odoo 开发环境
+
+1.打开 VSCode 项目：启动 VSCode，打开文件夹 /home/bincoo/odoo-dev/src。
+2.安装推荐扩展（在 VSCode 的 Extensions 面板搜索并安装）：
+
+- 找到名为 "Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code" 的扩展（通常由 Microsoft 发布）。
+   - 按下快捷键 Ctrl + Shift + P 打开 Command Palette（命令面板）。
+   - 在命令面板中输入 display，然后选择并运行 "Configure Display Language"（配置显示语言）命令。
+   - 系统会弹出一个语言列表。选择 "zh-hans" (简体中文)。
+   - VS Code 会提示您重启以应用更改。点击 "Restart"（重启）按钮。
+- Python (by Microsoft)：用于 Python 支持和调试。
+- Pylint 或 Ruff：代码 linting。
+- XML (by Red Hat)：Odoo 使用 XML 视图。
+- Cybrosys Assista (Odoo Helper)：Odoo 专用扩展，提供 snippets、模块导航和命令（如果可用，从 VSCode Marketplace 搜索）。
+- GitLens：Git 集成。
+- Odoo Snippets（如果有第三方扩展）。
+
+
+
+
+
+
 
 
 
