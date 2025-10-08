@@ -148,6 +148,96 @@ deactivate
 
 ### 步骤 6: 配置 Odoo
 
+创建配置文件以指定数据库用户等。
+
+1.复制模板配置文件：
+
+```bash
+cp ~/odoo-dev/src/debian/odoo.conf ~/odoo-dev/odoo.conf
+```
+
+2.编辑 ~/odoo-dev/odoo.conf（使用 nano 或 vim）：
+
+```bash
+nano ~/odoo-dev/odoo.conf
+```
+
+添加/修改以下内容（使用 "bincoo" 作为数据库用户；如果设置了密码，添加 db_password）：
+
+```ini
+[options]
+admin_passwd = admin  ; 管理员密码，用于创建数据库
+db_host = False
+db_port = False
+db_user = bincoo
+db_password = False  ; 如果无密码，留空
+addons_path = /home/bincoo/odoo-dev/src/addons  ; 如果有自定义模块，添加路径
+logfile = /home/bincoo/odoo-dev/odoo.log
+````
+3.初始化数据库（激活 venv 后运行）：
+
+```bash
+source ~/odoo-dev/venv/bin/activate
+~/odoo-dev/src/odoo-bin -c ~/odoo-dev/odoo.conf -d odoo-dev -i base --stop-after-init
+deactivate
+```
+
+
+### 步骤 7: 测试运行 Odoo
+
+1.激活 venv 并运行 Odoo：
+
+```bash
+cd ~/odoo-dev
+source venv/bin/activate
+~/odoo-dev/src/odoo-bin -c odoo.conf
+```
+2.在浏览器访问 http://localhost:8069，使用 admin/admin 登录（如果初始化成功）。
+
+3.停止：按 Ctrl+C。
+
+（可选）设置 systemd 服务（生产用，非开发必须）：
+
+1.创建服务文件：
+
+```bash
+sudo nano /etc/systemd/system/odoo.service
+```
+
+内容：
+
+```ini
+[Unit]
+Description=Odoo
+After=postgresql.service
+
+[Service]
+User=bincoo
+Group=bincoo
+ExecStart=/home/bincoo/odoo-dev/venv/bin/python3 /home/bincoo/odoo-dev/src/odoo-bin -c /home/bincoo/odoo-dev/odoo.conf
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target
+```
+2.启用并启动：
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl start odoo
+sudo systemctl enable odoo
+```
+
+| 命令                 	|   作用   	|     场景      |
+| --------------------- |----------- | ------------ |
+| sudo systemctl start odoo	| 启动服务	| 首次启动或停止后重新启动。 |
+| sudo systemctl stop odoo	| 停止服务	| 暂时关闭 Odoo。 |
+| sudo systemctl restart odoo |	重启服务 |	停止后立即重新启动，常用于修改 Odoo 配置文件后。 |
+| sudo systemctl status odoo	| 查看状态 |	检查 Odoo 是否在运行，以及最近的运行日志。 |
+| sudo systemctl enable odoo	| 设置开机自启	| 确保服务器重启后 Odoo 自动启动。 |
+| sudo systemctl disable odoo |	取消开机自启	阻止 Odoo 随系统启动。 |
+
+
 
 
 
